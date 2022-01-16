@@ -8,7 +8,7 @@ def call(String repoUrl) {
        stages {
            stage("Tools initialization") {
                steps {
-                       sh echo $MAIN_SEDM}
+                    echo $MAIN_SEDM}
                    }
                }
            stage("Checkout Code") {
