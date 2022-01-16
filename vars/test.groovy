@@ -1,8 +1,3 @@
-vars
-| --- welcomeJob.groovy
-| --- jenkinsForJava.groovy
-| --- jenkinsLambdaTest.groovy
-
 def call(String repoUrl) {
    pipeline{
        agent any
