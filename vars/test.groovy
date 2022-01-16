@@ -3,7 +3,7 @@ def call(String repoUrl) {
        agent any
        
        environment {
-           MAIN_SEDM = ${env.MAIN_SEDM}
+           MAIN_SEDM = "${env.MAIN_SEDM}"
        }
        stages {
            stage("Tools initialization") {
