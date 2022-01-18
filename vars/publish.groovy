@@ -4,7 +4,7 @@ def call(opts) {
      stage{
   stage('Build') {
     steps{
-  echo "env is ${env.MAIN_SEDM}"
-            sh  echo ${env.MAIN_SEDM}
+  echo "env is ${env.projectName}"
+            sh  echo ${env.projectName}
     }}}
    }}
