@@ -1,6 +1,6 @@
 def call(Map message) {
 
     jobName([        
-        currentBuild.projectName: [[currentBuild.projectName:  message.JOB_BASE_NAME ]]
+        (currentBuild.projectName): [[currentBuild.projectName:  message.JOB_BASE_NAME ]]
     ])
   }
