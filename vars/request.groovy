@@ -9,7 +9,7 @@ def call(Map params) {
 	
     process([
 	    requestContent.append("""{ "applicationCode": "$applicationCode",""")
-requestContent.append("""applBranchName": "$applBranchName", "changemanPackageNumber": "$changemanPackageNumber", "gexxBranchName": "$gexxBranchName", "userid": "$userid", "callbackURL": "$callbackURL" }""");
+requestContent.append("""applBranchName": "$applBranchName", "changemanPackageNumber": "$changemanPackageNumber", "gexxBranchName": "$gexxBranchName", "userid": "$userid", "callbackURL": "$callbackURL" }""")
 	    
         
     ])
