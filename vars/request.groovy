@@ -16,7 +16,7 @@ def call(Map params) {
 	echo applicationCode
 	
 	requestContent.append("{")
-	requestContent.append(""\"applicationCode\": \"$applicationCode\", """)
+	requestContent.append("""\"applicationCode\": \"$applicationCode\", """)
 	requestContent.append("""applBranchName": "$applBranchName", """)
 	
 	   requestContent.append("""changemanPackageNumber": "$changemanPackageNumber", """)
