@@ -3,7 +3,7 @@ def call(Map params) {
     process([
 		requestContent.append('{')
 		requestContent.append("\"applicationCode\" : \"params.applicationCode\",")
-		requestContent.append("\"applBranchName\" : \"params.applBranchName\",")
+		requestContent.append("\"applBranchName" : \"params.applBranchName\",")
 		requestContent.append("\"changemanPackageNumber\" : \"params.changemanPackageNumber\",") 
 		requestContent.append("\"gexxBranchName\" : \"params.gexxBranchName\",")    	            
 		
