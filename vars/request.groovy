@@ -14,13 +14,11 @@ def call(Map params) {
 	echo userid
 	echo callbackURL
 	echo applicationCode
-	process([
-	   requestContent.append("""{ "applicationCode": "$applicationCode", """)
+	requestContent.append("""{ "applicationCode": "$applicationCode", """)
 	   
 	      
         
-    ])
-   echo "requestBody="
+       echo "requestBody="
    echo (requestContent.toString())
     
   }
