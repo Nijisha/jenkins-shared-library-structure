@@ -17,12 +17,12 @@ def call(Map params) {
 	
 	requestContent.append("{")
 	requestContent.append("""\"applicationCode\": \"$applicationCode\", """)
-	requestContent.append("""applBranchName": "$applBranchName", """)
+	requestContent.append("""\"applBranchName\": \"$applBranchName\", """)
 	
-	   requestContent.append("""changemanPackageNumber": "$changemanPackageNumber", """)
-	    requestContent.append(""""gexxBranchName": "$gexxBranchName", """) 
-	    requestContent.append(""""userid": "$userid", """)
-	    requestContent.append(""""callbackURL": "$callbackURL" }""");
+	   requestContent.append("""\"changemanPackageNumber\": \"$changemanPackageNumber\", """)
+	    requestContent.append("""\"gexxBranchName\": \"$gexxBranchName\", """) 
+	    requestContent.append("""\"userid\": \"$userid\", """)
+	    requestContent.append("""\"callbackUR\L": "\$callbackURL\" }""");
 	   
 	      
         
