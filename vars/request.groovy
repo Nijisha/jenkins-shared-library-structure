@@ -8,9 +8,9 @@ def call(Map params) {
 	callbackURL = params.callbackURL
 	
     process([
-	    requestContent.append("""{ "applicationCode": "$applicationCode",""")
-requestContent.append("""applBranchName": "$applBranchName", "changemanPackageNumber": "$changemanPackageNumber", "gexxBranchName": "$gexxBranchName", "userid": "$userid", "callbackURL": "$callbackURL" }""")
-	    
+	   requestContent.append("""{ "applicationCode": "$applicationCode",""")
+requestContent.append("""applBranchName": "$applBranchName",""") requestContent.append("""changemanPackageNumber": "$changemanPackageNumber", "gexxBranchName": "$gexxBranchName", "userid": "$userid", "callbackURL": "$callbackURL" }""");
+	      
         
     ])
    echo "requestBody="
