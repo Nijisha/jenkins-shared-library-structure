@@ -15,7 +15,7 @@ def call(Map params) {
 	echo callbackURL
 	echo applicationCode
 	requestContent.append("""{ "applicationCode": "$applicationCode", """)
-	   
+	requestContent.append("""applBranchName": "$applBranchName", """) 
 	      
         
        echo "requestBody="
