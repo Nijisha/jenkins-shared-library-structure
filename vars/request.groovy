@@ -15,7 +15,7 @@ def call(Map params) {
 	echo callbackURL
 	echo applicationCode
 	process([
-	StringBuilder json = new StringBuilder("""{
+	requestContent.append("""{
        "applicationCode": "$applicationCode",
        "applBranchName": "$applBranchName",
        "changemanPackageNumber": "$changemanPackageNumber",
