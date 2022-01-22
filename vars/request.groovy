@@ -8,7 +8,7 @@ def call(Map params) {
 	callbackURL = params.callbackURL
 	
     process([
-	    json.append("""{ "applicationCode": "$applicationCode", "applBranchName": "$applBranchName", "changemanPackageNumber": "$changemanPackageNumber", "gexxBranchName": "$gexxBranchName", "userid": "$userid", "callbackURL": "$.callbackURL" }""");
+	    json.append("""{ "applicationCode": "$applicationCode", "applBranchName": "$applBranchName", "changemanPackageNumber": "$changemanPackageNumber", "gexxBranchName": "$gexxBranchName", "userid": "$userid", "callbackURL": "$callbackURL" }""");
 	    
         
     ])
