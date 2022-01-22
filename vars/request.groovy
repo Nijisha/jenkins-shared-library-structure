@@ -22,7 +22,7 @@ def call(Map params) {
 	   requestContent.append("""\"changemanPackageNumber\": \"$changemanPackageNumber\", """)
 	    requestContent.append("""\"gexxBranchName\": \"$gexxBranchName\", """) 
 	    requestContent.append("""\"userid\": \"$userid\", """)
-	    requestContent.append("""\"callbackUR\L": "\$callbackURL\" }""");
+	    requestContent.append("""\"callbackURL\": "\$callbackURL\" }""");
 	   
 	      
         
