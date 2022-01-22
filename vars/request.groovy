@@ -14,7 +14,16 @@ def call(Map params) {
 	echo userid
 	echo callbackURL
 	echo applicationCode
-	
+	process([
+	   requestContent.append("""{ "applicationCode": "$applicationCode", """)
+	   requestContent.append(""""applBranchName": "$applBranchName", """) 
+	   requestContent.append(""""changemanPackageNumber": "$changemanPackageNumber", """)
+	    requestContent.append("""""gexxBranchName": "$gexxBranchName", """) 
+	    requestContent.append("""""userid": "$userid", """)
+	    requestContent.append("""""callbackURL": "$callbackURL" }""");
+	      
+        
+    ])
    echo "requestBody="
    echo (requestContent.toString())
     
