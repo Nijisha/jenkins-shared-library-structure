@@ -17,8 +17,8 @@ def call(Map params) {
 	
 	
     process([
-	   requestContent.append("""{ "applicationCode": "$applicationCode",""")
-	   requestContent.append("""applBranchName": "$applBranchName",""") 
+	   requestContent.append("""{ "applicationCode": "$applicationCode"""")
+	   requestContent.append(""", "applBranchName": "$applBranchName"""") 
 	   requestContent.append(""""changemanPackageNumber": "$changemanPackageNumber",""")
 	    requestContent.append("""""gexxBranchName": "$gexxBranchName",""") 
 	    requestContent.append("""""userid": "$userid", """)
